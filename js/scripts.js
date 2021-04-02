@@ -3,31 +3,45 @@ function mrRobogersSays(userInput) {
   for(let i=0; i<=userInput; i++){
     numberArray.push(i.toString()) 
   }
+  let resultArray = []
   numberArray.forEach(function(element){
-    let newArray = []
     if (element.includes("3")) {
-      newArray.push("Won't you be my neighbor?")}
+      resultArray.push("Won't you be my neighbor?")}
       else if (element.includes("2")) {
-        newArray.push("Boop!")
+        resultArray.push("Boop!")
       }else if (element.includes("1")) {
-        newArray.push("Beep!")
+        resultArray.push("Beep!")
       }
-      else {newArray.push(element)
+      else {resultArray.push(element)
       }
-        console.log(newArray)
-  })
-  
+    })
+    return resultArray
   }
 
+  // function omit(text) {
+  //   let inputToSend = text.split(" ")
+  //   const notAllowed = ("^[A-Za-z]+$")
+    
+  //   inputToSend.forEach(function(element) {
+  //     if (element.includes(notAllowed)) {
+  //       inputToSend = ""
+  //     } 
+  //     return inputToSend;
+  //   })
+  // }
 
 
 
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+  $(document).ready(function(){
+    ("form#input").submit(event)
+    event.preventDefault()
+    const inputFromUser = parseInt($("form#userForm").val())
+
+
+
+  })
+
   

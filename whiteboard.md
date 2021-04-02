@@ -29,13 +29,13 @@ expected result: "Won't you be my neighbor?"<!-- console logged "Won't you be my
 
 test: "It should not allow anything but numbers to be inputted"
 code:
-expected result: alert "Please enter a number"
+expected result: alert "Please enter a number"<!-- jQuery>
 
 test: "It should prioritize 3's response over 2 and 1
 code:
-expected result: return "Won't you be my neighbor"
+expected result: return "Won't you be my neighbor"<!-- passed>
 
-test: "It should replace all digits if conditions for 3 || 2 || 1 are met
+test: "It should replace all digits if conditions for 3 || 2 || 1 are met<!-- passed>
 code:
 expected result: 
 

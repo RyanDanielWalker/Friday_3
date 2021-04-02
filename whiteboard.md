@@ -39,3 +39,9 @@ test: "It should replace all digits if conditions for 3 || 2 || 1 are met<!-- pa
 code:
 expected result: 
 
+test: "It should return results to user"
+code:
+expected result: return results
+
+
+

@@ -21,12 +21,15 @@ function mrRobogersSays(userInput) {
     $("form#userForm").submit(function(event){
     event.preventDefault()
     const inputFromUser = parseInt($("#numberInput").val())
-    if (inputFromUser > 1000) {
-      alert ("I celebrate your ambition! Don't worry, we'll cover reading directions next week. For now, please enter a number between 1 & 1000")
-    }else{
-      let printedResult = mrRobogersSays(inputFromUser)
-      $("#answerField").text(printedResult)}
-    })
+    if (inputFromUser >= 0){
+      if (inputFromUser > 1000) {
+        alert ("I celebrate your ambition! Don't worry, we'll cover direction reading next week. For now, please enter a number between 1 & 1000")
+      }else{
+        let printedResult = mrRobogersSays(inputFromUser)
+        $("#answerField").text(printedResult)}
+        $("#answerField").show()}
+        else alert("You are special just the way you are, but you'd be even more special if you entered a number.")
+      })
   })
 
   

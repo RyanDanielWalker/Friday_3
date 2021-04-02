@@ -17,9 +17,12 @@ body {
 }
 #answerField {
   display: none;
+  background-color: rgb(223, 26, 26);
+  color: white;
+  text-shadow: black 1px;
   border: dashed 2px black;
   margin: auto;
-  padding: 3px;
+  padding: 5px;
   width: 50vw;
   height: 25vh;
 }
@@ -27,4 +30,7 @@ body {
   background-color: rgb(223, 26, 26);
   color: white;
 }
-  
+#numberInput::placeholder{
+  color:white;
+  opacity: 1;
+}

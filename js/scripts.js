@@ -22,17 +22,19 @@ function mrRobogersSays(userInput) {
     event.preventDefault()
     const inputFromUser = parseInt($("#numberInput").val())
     if (inputFromUser >= 0){
-      if (inputFromUser > 1000) {
-        alert ("I celebrate your ambition! Don't worry, we'll cover direction reading next week. For now, please enter a number between 1 & 1000")
-      }else{
+      if (inputFromUser <= 1000) {
         let printedResult = mrRobogersSays(inputFromUser)
-        $("#answerField").text("Mr. Robogers counts to that number like this: " + printedResult)}
-        $("#answerField").slideDown(750)}
-        else alert("You are special just the way you are, but you'd be even more special if you entered a number.")
-      })
+        $("#answerField").text("Mr. Robogers counts to that number like this: " + printedResult)
+        $("#answerField").slideDown(750)
+      } else {
+        alert ("I celebrate your ambition! Don't worry, we'll cover direction-reading next week. For now, please enter a number between 0 & 1000")
+      }
+    } else {
+      alert("You are special just the way you are, but you'd be even more special if you entered a number.")
+    }
   })
+})
 
-  
 
 
 

@@ -9,7 +9,7 @@ The program will replace 1, 2, and 3 with new values.
 2 will over-ride 1
 
 
-test: "It should gather user inputted number into array"
+test: "It should gather user inputted number into array as strings"
 code:
 expected result: return numberArray <!-- Technically passed, need to not allow letters.
 
@@ -25,7 +25,7 @@ expected result: "Boop!"
 
 test: "It should return "Won't you be my neighbor?" if 3 is inputted.
 code:
-expected result: "Won't you be my neighbor?"
+expected result: "Won't you be my neighbor?"<!-- console logged "Won't you be my neighbor">
 
 test: "It should not allow anything but numbers to be inputted"
 code:

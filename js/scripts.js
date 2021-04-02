@@ -1,9 +1,9 @@
 function mrRobogersSays(userInput) {
   const numberArray = []
+  let resultArray = []
   for(let i=0; i<=userInput; i++){
     numberArray.push(i.toString()) 
   }
-  let resultArray = []
   numberArray.forEach(function(element){
     if (element.includes("3")) {
       resultArray.push(" Won't you be my neighbor?")}
@@ -12,25 +12,25 @@ function mrRobogersSays(userInput) {
       }else if (element.includes("1")) {
         resultArray.push(" Beep!")
       }
-      else {resultArray.push(element)
+      else {resultArray.push(" " + element)
       }
     })
     return resultArray
   }
-
-  
-
   $(document).ready(function(){
     $("form#userForm").submit(function(event){
     event.preventDefault()
     const inputFromUser = parseInt($("#numberInput").val())
-    if (inputFromUser > 100) {
-      alert ("Wow! You sure are ambitious. Unfortunately, we can't count that high in this neighborhood. Please choose a number below 100")
+    if (inputFromUser > 1000) {
+      alert ("I celebrate your ambition! Don't worry, we'll cover reading directions next week. For now, please enter a number between 1 & 1000")
     }else{
       let printedResult = mrRobogersSays(inputFromUser)
       $("#answerField").text(printedResult)}
     })
   })
+
+  
+
 
 
 

@@ -26,7 +26,7 @@ function mrRobogersSays(userInput) {
         alert ("I celebrate your ambition! Don't worry, we'll cover direction reading next week. For now, please enter a number between 1 & 1000")
       }else{
         let printedResult = mrRobogersSays(inputFromUser)
-        $("#answerField").text(printedResult)}
+        $("#answerField").text("Mr. Robogers counts to that number like this: " + printedResult)}
         $("#answerField").show()}
         else alert("You are special just the way you are, but you'd be even more special if you entered a number.")
       })

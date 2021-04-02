@@ -17,11 +17,11 @@ expected result: return numberArray <!-- Technically passed, need to not allow l
 
 test: "It should return "Beep!" if number 1 is inputted"
 code:
-expected result: "Beep!"
+expected result: "Beep!"<!-- console logged "beep" while all other numbers remained.>
 
 test: "It should return "Boop!" if number 2 is inputted"
 code:
-expected result: "Boop!"
+expected result: "Boop!"<!-- console logged "boop" while "won't you be my neighbor" remained.>
 
 test: "It should return "Won't you be my neighbor?" if 3 is inputted.
 code:

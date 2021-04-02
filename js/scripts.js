@@ -18,30 +18,22 @@ function mrRobogersSays(userInput) {
     return resultArray
   }
 
-  // function omit(text) {
-  //   let inputToSend = text.split(" ")
-  //   const notAllowed = ("^[A-Za-z]+$")
-    
-  //   inputToSend.forEach(function(element) {
-  //     if (element.includes(notAllowed)) {
-  //       inputToSend = ""
-  //     } 
-  //     return inputToSend;
-  //   })
-  // }
-
-
-
-
-
+  
 
   $(document).ready(function(){
-    ("form#input").submit(event)
+    $("form#userForm").submit(function(event){
     event.preventDefault()
-    const inputFromUser = parseInt($("form#userForm").val())
-
-
-
+    const inputFromUser = parseInt($("#numberInput").val())
+    let printedResult = mrRobogersSays(inputFromUser)
+    $("#answerField").text(printedResult)
   })
+})
+
+
+
+
+
+
+
 
   

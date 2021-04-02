@@ -27,7 +27,7 @@ function mrRobogersSays(userInput) {
       }else{
         let printedResult = mrRobogersSays(inputFromUser)
         $("#answerField").text("Mr. Robogers counts to that number like this: " + printedResult)}
-        $("#answerField").show()}
+        $("#answerField").slideDown(750)}
         else alert("You are special just the way you are, but you'd be even more special if you entered a number.")
       })
   })

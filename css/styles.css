@@ -16,13 +16,15 @@ body {
   display:block;
 }
 #answerField {
+  display: none;
   border: dashed 2px black;
   margin: auto;
   padding: 3px;
   width: 50vw;
   height: 25vh;
 }
-#answerField {
-  display: none;
+#numberInput {
+  background-color: rgb(223, 26, 26);
+  color: white;
 }
   

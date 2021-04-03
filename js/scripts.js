@@ -27,10 +27,10 @@ function mrRobogersSays(userInput) {
         $("#answerField").text("Mr. Robogers counts to that number like this: " + printedResult)
         $("#answerField").slideDown(750)
       } else {
-        alert ("I celebrate your ambition! Don't worry, we'll cover direction-reading next week. For now, please enter a number between 0 & 1000")
+        alert ("There are three ways to ultimate success: The first way is to be kind. The second way is to be kind. The third way is to follow the directions.")
       }
     } else {
-      alert("You are special just the way you are, but you'd be even more special if you entered a number.")
+      alert("Let's try entering a number that is equally as worthwhile as you are.")
     }
   })
 })

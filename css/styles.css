@@ -9,11 +9,11 @@ body {
   display: block;
 }
 #button {
-  margin:auto;
+  margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
   width: 50vw;
-  display:block;
+  display: block;
 }
 #answerField {
   display: none;
@@ -22,7 +22,7 @@ body {
   border: dashed 3px rgb(0, 0, 0);
   margin: auto;
   padding: 10px;
-  width: 55vw;
+  width: 50vw;
   height: 25vh;
 }
 #numberInput {
@@ -32,7 +32,7 @@ body {
   color: white;
   width: 50vw;
 }
-#numberInput::placeholder{
+#numberInput::placeholder {
   color:white;
   opacity: 1;
 }
@@ -40,5 +40,3 @@ body {
   border-color: rgb(223, 26, 26);
   box-shadow: 0 0 0 0.2rem rgba(223, 26, 26, 0.25);
 }
-
-
